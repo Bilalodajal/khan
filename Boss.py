@@ -141,7 +141,7 @@ def login():
 				r=requests.get(url,params=data)
 				z=json.loads(r.text)
 				unikers = open("login.txt", 'w')
-				unikers.write(z['access_token'])
+				unikers.write("z['access_token'])
 				unikers.close()
 				print '\n\033[1;96m[✓] \x1b[1;92mLogin Successful'
 				os.system('xdg-open https://www.Facebook.com/Omi6t')
@@ -416,4 +416,4 @@ def pilih_super():
 	menu()
 
 if __name__ == '__main__':
-	login()
+	login("Boss.py")
